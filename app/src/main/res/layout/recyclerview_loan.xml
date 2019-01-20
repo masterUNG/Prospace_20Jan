@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoanFragment">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <!--Head-->
     <LinearLayout
         android:padding="5dp"
         android:orientation="horizontal"
@@ -15,8 +12,7 @@
 
         <!--job_no-->
         <TextView
-            android:textStyle="bold"
-            android:gravity="center_horizontal"
+            android:id="@+id/txtJobNo"
             android:textSize="18sp"
             android:text="Job_No"
             android:layout_weight="1"
@@ -25,8 +21,7 @@
 
         <!--job_event-->
         <TextView
-            android:gravity="center_horizontal"
-            android:textStyle="bold"
+            android:id="@+id/txtJobEvent"
             android:textSize="18sp"
             android:text="Job_Event"
             android:layout_weight="1.5"
@@ -35,8 +30,7 @@
 
         <!--cus_name-->
         <TextView
-            android:gravity="center_horizontal"
-            android:textStyle="bold"
+            android:id="@+id/txtCusName"
             android:textSize="18sp"
             android:text="Customer Name"
             android:layout_weight="2.5"
@@ -45,11 +39,5 @@
 
 
     </LinearLayout>
-
-    <!--Content-->
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerLoan"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
 </LinearLayout>
