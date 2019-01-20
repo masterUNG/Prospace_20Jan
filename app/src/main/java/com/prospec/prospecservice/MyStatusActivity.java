@@ -22,6 +22,22 @@ public class MyStatusActivity extends AppCompatActivity {
 //        Create Toolbar
         createToolbar();
 
+//        Create Fragment
+        if (savedInstanceState == null) {
+
+            switch (index) {
+                case 0:
+                    getSupportFragmentManager().beginTransaction().add(R.id.contentMyStatusFragment, new LoanFragment()).commit();
+                    break;
+                case 1:
+                    getSupportFragmentManager().beginTransaction().add(R.id.contentMyStatusFragment, new MarketingFragment()).commit();
+                    break;
+                case 2:
+                    getSupportFragmentManager().beginTransaction().add(R.id.contentMyStatusFragment, new ValuerFragment()).commit();
+                    break;
+            }
+
+        }
 
     }   // Main Method
 
